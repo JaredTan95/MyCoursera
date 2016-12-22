@@ -1,0 +1,69 @@
+/*修饰 计算机专业体系顶部 粒子背景效果*/
+#particles {
+  margin-top: 10px;
+  color: #fff;
+  background: #0066FF;
+  width: 100%;
+  height: 430px;
+  overflow: hidden;
+}
+
+.intro {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  padding: 0 20px;
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+}
+p {
+  font-family: "Arial", "Hiragino Sans GB", "黑体", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";
+  font-size: 16px;
+}
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 48px;
+  }
+  h1::after {
+    height: 8px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .intro {
+    padding: 0 10px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h1::after {
+    height: 6px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 28px;
+  }
+  h1::after {
+    height: 4px;
+  }
+}

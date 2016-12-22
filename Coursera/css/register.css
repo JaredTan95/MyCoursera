@@ -1,0 +1,123 @@
+/**{
+    margin: 0px;
+    padding: 0px;
+}*/
+body{
+    font-family: 微软雅黑;
+    font-size: 9px;
+}
+#body_register{
+    width: 600px;
+    margin: 0 auto;
+}
+h1{
+    font-weight: 500;
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h2{
+    background-color: #dedede;
+    border-bottom: 1px solid #d4d4d4;
+    border-top: 1px solid #d4d4d4;
+    color: steelblue;
+    padding: 0.3cm 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+}
+h2.account{
+    background-color: lightsteelblue;
+}
+h2.address{
+    background-color: lightsteelblue;
+}
+h2.public-profile{
+    background-color: lightsteelblue;
+}
+h2.emails{
+    background-color: lightsteelblue;;
+}
+fieldset{
+    background-color: #f1f1f1;
+    border: none;
+    margin-bottom: 12px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+#account_ul{
+    background-color: lightcyan;
+    border: 1px solid #eaeaea;
+    list-style: none;
+    margin: 19px;
+    padding: 14px;
+}
+li{
+    margin: 1em 0;
+}
+label{
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: right;
+    width: 150px;
+    vertical-align: top;
+}
+.small{
+    width: 100px;
+}
+.medium{
+    width: 170px;
+}
+.large{
+    width: 250px;
+}
+textarea{
+    font: inherit;
+    width: 250px;
+}
+.instructions{
+    font-size: 15px;
+    padding-left: 167px;
+    font-style: italic;
+    color: #999;
+}
+.create_profile{
+    background-color: steelblue;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    margin: 12px;
+    padding: 8px;
+}
+.radios{
+    background: none;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+.radios ul{
+    border: none;
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.radios li{
+    margin: 0;
+    display: inline-block;
+}
+.radios label{
+    margin-right: 25px;
+    width: auto;
+}
+.radios input{
+    margin-top: 3px;
+}
+.checkboxes{
+    text-align: left;
+    width: 475px;
+}
+button*{
+    vertical-align: middle;
+}
