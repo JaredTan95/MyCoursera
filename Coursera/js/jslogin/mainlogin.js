@@ -8,7 +8,11 @@ jQuery(document).ready(function($){
 		$tab_signup = $form_modal_tab.children('li').eq(1).children('a'),
 		$forgot_password_link = $form_login.find('.cd-form-bottom-message a'),
 		$back_to_login_link = $form_forgot_password.find('.cd-form-bottom-message a'),
-		$main_nav = $('.main-nav');
+		$main_nav = $('.main-nav'),
+		$data_signin_account=$form_modal.find('#signin-accout'),
+		$data_signin_pwd=$form_modal.find('#signin-password'),
+		$btn_singin=$form_modal.find('#signin'),
+		$btn_signup=$form_modal.find('#signup');
 
 	//open modal
 	$main_nav.on('click', function(event){
@@ -40,6 +44,24 @@ jQuery(document).ready(function($){
 	    }
     });
 
+
+	//点击登录
+	$btn_singin.on('click',function(){
+		$.post("http:tanjianff.cn:8124/user/login", { username: $data_signin_account.val(), password: $data_signin_pwd.val() },
+  			 function(data){
+    		 	alert("Data Loaded: " + data);
+   			});
+	});
+
+	//点击注册
+	$btn_signup.on('click',function(){
+		$.post("url", { name: '', passwd:'' },
+  			 function(data){
+    		 alert("Data Loaded: " + data);
+   		});
+	});
+
+
 	//switch from a tab to another
 	$form_modal_tab.on('click', function(event) {
 		event.preventDefault();
@@ -52,7 +74,7 @@ jQuery(document).ready(function($){
 			$password_field = $this.prev('input');
 		
 		( 'password' == $password_field.attr('type') ) ? $password_field.attr('type', 'text') : $password_field.attr('type', 'password');
-		( 'Hide' == $this.text() ) ? $this.text('Show') : $this.text('Hide');
+		( '隐藏' == $this.text() ) ? $this.text('显示') : $this.text('隐藏');
 		//focus and move cursor to the end of input field
 		$password_field.putCursorAtEnd();
 	});
